@@ -16,7 +16,9 @@ namespace Alexa.NET.SampleSkill.RequestHandlers
 
 		public override SkillResponse HandleSyncRequest(RequestInformation information)
 		{
-			return ResponseBuilder.Tell("You launched the skill. Thanks.");
+			return ResponseBuilder.Ask(
+				"Hi there, thanks for wanting to learn more about Alexa dot net. Would you like to find out about?",
+			    new Reprompt("What feature would you like to find out about?"));
 		}
 	}
 }

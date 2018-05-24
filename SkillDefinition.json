@@ -1,0 +1,72 @@
+﻿{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "dot net skills",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FeatureDetail",
+                    "slots": [
+                        {
+                            "name": "feature",
+                            "type": "FeatureName"
+                        }
+                    ],
+                    "samples": [
+                        "I want to know about {feature}",
+                        "Tell me about {feature}",
+                        "How does {feature} work"
+                    ]
+                },
+                {
+                    "name": "throwanerror",
+                    "slots": [],
+                    "samples": [
+                        "cause an error",
+                        "cause an exception",
+                        "throw an exception",
+                        "throw an error"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "FeatureName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Templates",
+                                "synonyms": [
+                                    "spot templates",
+                                    "show templates",
+                                    "display templates"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Progressive Response"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

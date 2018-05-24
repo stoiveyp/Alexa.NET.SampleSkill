@@ -1,9 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Alexa.NET.Request;
 using Alexa.NET.Response;
+using Alexa.NET.SampleSkill.ErrorHandlers;
 using Alexa.NET.SampleSkill.RequestHandlers;
 using Amazon.Lambda.Core;
 
@@ -12,7 +10,7 @@ using Amazon.Lambda.Core;
 
 namespace Alexa.NET.SampleSkill
 {
-    public class Function
+	public class Function
     {
         
 		private Alexa.NET.RequestHandlers.Request Processor { get; }
@@ -20,8 +18,8 @@ namespace Alexa.NET.SampleSkill
 		public Function()
 		{
 			Processor = new Alexa.NET.RequestHandlers.Request(
-				new[]{new Launch()},
-				null);
+				new Alexa.NET.RequestHandlers.IRequestHandler[]{new Launch(),new ThrowAnError()},
+				new[]{new Unhandled()});
 		}
 
         /// <summary>

@@ -18,5 +18,6 @@
 
   <ItemGroup>
     <Folder Include="RequestHandlers\" />
+    <Folder Include="ErrorHandlers\" />
   </ItemGroup>
 </Project>
