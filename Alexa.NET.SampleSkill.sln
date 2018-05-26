@@ -1,12 +1,15 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexa.NET.SampleSkill", "src\Alexa.NET.SampleSkill\Alexa.NET.SampleSkill.csproj", "{A6F2E1CA-8500-4A4C-983F-ECA1FC9B1B1B}"
+VisualStudioVersion = 15.0.27705.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexa.NET.SampleSkill", "src\Alexa.NET.SampleSkill\Alexa.NET.SampleSkill.csproj", "{A6F2E1CA-8500-4A4C-983F-ECA1FC9B1B1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexa.NET.SampleSkill.Tests", "test\Alexa.NET.SampleSkill.Tests\Alexa.NET.SampleSkill.Tests.csproj", "{8C439699-3CC7-4E65-81B1-CFEBB8B96B69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexa.NET.SampleSkill.Tests", "test\Alexa.NET.SampleSkill.Tests\Alexa.NET.SampleSkill.Tests.csproj", "{8C439699-3CC7-4E65-81B1-CFEBB8B96B69}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SkillItems", "SkillItems", "{BC3F41EA-52A3-4629-B4DD-5317DDE7B7A3}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\cogLarge.png = ..\..\..\Desktop\cogLarge.png
+		..\..\..\Desktop\cogSmall.png = ..\..\..\Desktop\cogSmall.png
 		SkillDefinition.json = SkillDefinition.json
 	EndProjectSection
 EndProject
@@ -24,5 +27,11 @@ Global
 		{8C439699-3CC7-4E65-81B1-CFEBB8B96B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C439699-3CC7-4E65-81B1-CFEBB8B96B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C439699-3CC7-4E65-81B1-CFEBB8B96B69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3526B13-3159-4243-94A5-EE61DAFD793D}
 	EndGlobalSection
 EndGlobal

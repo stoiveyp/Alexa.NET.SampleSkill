@@ -1,7 +1,7 @@
 ﻿{
     "interactionModel": {
         "languageModel": {
-            "invocationName": "dot net skills",
+            "invocationName": "dot net sample skill",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
@@ -24,6 +24,14 @@
                         }
                     ],
                     "samples": [
+                        "how to work with {feature}",
+                        "ask about {feature}",
+                        "ask how {feature} works",
+                        "how do {feature} work",
+                        "how {feature} looks",
+                        "how {feature} work",
+                        "about {feature}",
+                        "{feature}",
                         "I want to know about {feature}",
                         "Tell me about {feature}",
                         "How does {feature} work"
@@ -46,22 +54,39 @@
                     "values": [
                         {
                             "name": {
-                                "value": "Templates",
+                                "value": "gadgets",
                                 "synonyms": [
-                                    "spot templates",
-                                    "show templates",
-                                    "display templates"
+                                    "game engine",
+                                    "game controller"
                                 ]
                             }
                         },
                         {
+                          "name": {
+                            "value": "templates",
+                            "synonyms": [
+                              "display templates",
+                              "body templates"
+                            ]
+                          }
+                        },
+                        {
                             "name": {
-                                "value": "Lists"
+                                "value": "dialog"
                             }
                         },
                         {
                             "name": {
-                                "value": "Progressive Response"
+                                "value": "lists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Progressive Response",
+                                "synonyms": [
+                                    "long running intents",
+                                    "delayed response"
+                                ]
                             }
                         }
                     ]
