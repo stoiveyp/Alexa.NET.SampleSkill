@@ -8,8 +8,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexa.NET.SampleSkill.Tests
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SkillItems", "SkillItems", "{BC3F41EA-52A3-4629-B4DD-5317DDE7B7A3}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\cogLarge.png = ..\..\..\Desktop\cogLarge.png
-		..\..\..\Desktop\cogSmall.png = ..\..\..\Desktop\cogSmall.png
+		cogLarge.png = cogLarge.png
+		cogSmall.png = cogSmall.png
 		SkillDefinition.json = SkillDefinition.json
 	EndProjectSection
 EndProject
