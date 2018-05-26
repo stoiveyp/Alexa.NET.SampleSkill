@@ -9,9 +9,14 @@ namespace Alexa.NET.SampleSkill.RequestHandlers
 	{
 		public override bool CanHandle(RequestInformation information)
 		{
-			var intent = information.SkillRequest.Request as IntentRequest;
-			var intentName = intent?.Intent.Name ?? string.Empty;
-			return intentName == BuiltInIntent.Cancel || intentName == BuiltInIntent.Stop;
+			switch(information.SkillRequest.Request)
+			{
+				case IntentRequest intent:
+					var intentName = intent.Intent.Name;
+                    return intentName == BuiltInIntent.Cancel || intentName == BuiltInIntent.Stop;
+				default:
+					return false;
+			}
 		}
 
 		public override SkillResponse HandleSyncRequest(RequestInformation information)

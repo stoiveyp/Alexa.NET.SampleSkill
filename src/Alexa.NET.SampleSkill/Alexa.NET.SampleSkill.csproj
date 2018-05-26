@@ -17,7 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="RequestHandlers\" />
     <Folder Include="ErrorHandlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="RequestHandlers\ProgressRespone.cs" />
   </ItemGroup>
 </Project>
