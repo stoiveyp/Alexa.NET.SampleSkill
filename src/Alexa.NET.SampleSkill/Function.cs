@@ -20,6 +20,7 @@ namespace Alexa.NET.SampleSkill
 				new Alexa.NET.RequestHandlers.IRequestHandler[]
 				{
 				    new Launch(),
+                    new End(), 
 				    new ThrowAnError(),
                     new ProgressiveResponse(), 
                     new UnknownFeature()
