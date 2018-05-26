@@ -10,7 +10,7 @@ namespace Alexa.NET.SampleSkill.RequestHandlers
 	{
 		public bool CanHandle(RequestInformation information)
 		{
-		    return information.IsFeature("Progressive Response");
+		    return information.IsFeature(SupportedFunctions.ProgressiveResponse);
 		}
 
 		public async Task<SkillResponse> Handle(RequestInformation information)

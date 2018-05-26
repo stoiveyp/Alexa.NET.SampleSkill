@@ -17,7 +17,9 @@ namespace Alexa.NET.SampleSkill.RequestHandlers
 
         public override SkillResponse HandleSyncRequest(RequestInformation information)
         {
-            return ResponseBuilder.Tell("Ths isn't a feature currently shown by this skill, but we plan to add more based on your requests.");
+            return ResponseBuilder.Tell(@"This isn't a feature currently shown by this skill,
+popular features will be added over time, or you can visit the alexa dot net sample skill repo and ask for it to be added.");
+
         }
     }
 }
